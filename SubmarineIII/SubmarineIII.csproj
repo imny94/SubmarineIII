@@ -94,10 +94,11 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\Scripts\BlobSpawn.cs" />
     <Compile Include="Assets\Scripts\BulletController.cs" />
+    <Compile Include="Assets\Scripts\EnemyBlobHealth.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\FiringCommand.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\SubmarineHealth.cs" />
     <Compile Include="Assets\Scripts\SubmarinePlayer.cs" />
   </ItemGroup>

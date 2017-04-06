@@ -15,9 +15,6 @@ public class SubmarinePlayer : NetworkBehaviour {
 	public float cameraDistance = 0.5f; // Distance camera is away from player's submarine
 	Vector3 cameraOffset; 		        // Vector desecribing level of zoom of camera on player
 
-    //public GameObject leftBullet, rightBullet;
-    //Transform bulletSpawn;
-
     void Start () {
 		
 		if (!isLocalPlayer) {
@@ -82,29 +79,4 @@ public class SubmarinePlayer : NetworkBehaviour {
 		mainCamera.LookAt(transform);				// Make Camera look at Player's submarine
 	}
 
-    /*
-    // Update is called once per frame
-    void Update()
-    {
-        if (CrossPlatformInputManager.GetButtonDown("Fire"))
-        {
-            CmdFire();
-        }
-    }
-
-    [Command] // This is used to indicate a server call
-    void CmdFire()
-    {
-        if (facingright)
-        {                  // If facing Right
-            GameObject instance = Instantiate(rightBullet, bulletSpawn.position, Quaternion.identity) as GameObject;
-            NetworkServer.Spawn(instance);  // Spawn right bullet
-        }
-        if (!facingright)
-        {                // If facing left
-            GameObject instance = Instantiate(leftBullet, bulletSpawn.position, Quaternion.identity) as GameObject;
-            NetworkServer.Spawn(instance);   // Spawn left Bullet
-        }
-    }
-    */
 }

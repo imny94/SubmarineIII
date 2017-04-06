@@ -468,7 +468,10 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
     Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: 84b85e06-1274-4194-b7ec-60f5c4c4b848
   projectName: SubmarineIII

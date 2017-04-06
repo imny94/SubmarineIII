@@ -45,12 +45,14 @@ public class SubmarineHealth : NetworkBehaviour {
 	public void DecreaseHealth(){
         // Damage can only be calculated by the server, preventing hacked client from cheating
         // Also, if player is dead, no need to run this code anymore
+        Debug.Log("Decrease Health Method is called! current health is : "+currentHealth);
         if (!isServer||currentHealth <= 0)
         {
             return;
         }
-		currentHealth -= 10f;
-		float calculatedHealth = currentHealth / maxHealth;
+        Debug.Log("DecreaseHealth() Method called and is server!");
+		currentHealth -= 10f; // Should have no need to make explicit call to set player health as the current health variable is already hooked to setHealthBar method
+		//float calculatedHealth = currentHealth / maxHealth;
         //SetHealthBar (calculatedHealth);
         //healthSlider.value = currentHealth / maxHealth * 100; // Need to normalise health to between 0-100
 
@@ -89,7 +91,7 @@ public class SubmarineHealth : NetworkBehaviour {
 
         Debug.Log(gameObject.name + " current health : " + myHealth);
         //healthBar.transform.localScale = new Vector3 (myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
-        healthBar.sizeDelta = new Vector2(myHealth * 2, healthBar.sizeDelta.y);
+        healthBar.sizeDelta = new Vector2(myHealth/maxHealth*5, healthBar.sizeDelta.y); // Need to normalise size of health bar to the width of the health bar in game
 
 	}
     /*

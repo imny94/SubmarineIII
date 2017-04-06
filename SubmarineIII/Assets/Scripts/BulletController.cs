@@ -33,9 +33,9 @@ public class BulletController : NetworkBehaviour {
 	void OnCollisionEnter2D(Collision2D col)
 	{
         NetworkServer.Destroy(gameObject); // Destroys bullet every where as bullet has already collided
-
+        Debug.Log("Bullet has hit something.... might or might not be server");
         if (!isServer)
-        // Leave if not the server, only the server can deal damage to the players
+        // leave if not the server, only the server can deal damage to the players
         {
             return;
         }
@@ -43,15 +43,20 @@ public class BulletController : NetworkBehaviour {
         {
             return;
         }
-
+        //Debug.Log("Bullet has hit something, and action is managed by server");
         GameObject hit = col.gameObject;        // Reference to object that bullet collides with
         SubmarineHealth health;                 // Player health
         if (hit.tag == "Player")
         {
+            Debug.Log("Hit object is Player");
             health = hit.GetComponent<SubmarineHealth>();
+            Debug.Log("Health of hit object is : " + health);
             if (health != null)
             {
                 health.DecreaseHealth();
+            }else
+            {
+                Debug.Log("HEALTH IS NULL, WHY");
             }
         }else if(hit.tag == "monster")//TODO: Unimplemented logic for monster
         {
@@ -59,6 +64,8 @@ public class BulletController : NetworkBehaviour {
         }
         else
         {
+            Debug.Log("hit object tag miss.");
+            Debug.Log("hit is : " + hit);
             // Probably do nothing...
             // For now just carry out indiscriminate damage and assume target is a submarine
             health = hit.GetComponent<SubmarineHealth>();

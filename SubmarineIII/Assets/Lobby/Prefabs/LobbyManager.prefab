@@ -3200,7 +3200,10 @@ MonoBehaviour:
   m_PlayerSpawnMethod: 1
   m_OfflineScene: Lobby
   m_OnlineScene: 
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 1115946253321074, guid: 447993d728e9f4758893c9cd0dc10ec1, type: 2}
+  - {fileID: 1661661361913100, guid: d76136292dce140598f2388522fc78ce, type: 2}
+  - {fileID: 1547674140051040, guid: dd296c22b5b0a4b2a9466c59bdbaf8c3, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
@@ -3254,7 +3257,7 @@ MonoBehaviour:
   m_LobbyScene: Lobby
   m_PlayScene: Level1
   lobbySlots: []
-  prematchCountdown: 3
+  prematchCountdown: 1
   topPanel: {fileID: 11424994}
   mainMenuPanel: {fileID: 22442386}
   lobbyPanel: {fileID: 22443498}
