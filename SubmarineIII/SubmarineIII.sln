@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubmarineIII.Plugins", "SubmarineIII.Plugins.csproj", "{9BFA3A5D-88B0-BCA6-5FDE-43054094B927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubmarineIII", "SubmarineIII.csproj", "{1BD5029F-75E4-2791-CDA2-4D2B8ED49C44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubmarineIII.Editor.Plugins", "SubmarineIII.Editor.Plugins.csproj", "{EE9598A5-40C7-738A-1060-94A7A6E20D3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BFA3A5D-88B0-BCA6-5FDE-43054094B927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BFA3A5D-88B0-BCA6-5FDE-43054094B927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BFA3A5D-88B0-BCA6-5FDE-43054094B927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BFA3A5D-88B0-BCA6-5FDE-43054094B927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD5029F-75E4-2791-CDA2-4D2B8ED49C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD5029F-75E4-2791-CDA2-4D2B8ED49C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD5029F-75E4-2791-CDA2-4D2B8ED49C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD5029F-75E4-2791-CDA2-4D2B8ED49C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9598A5-40C7-738A-1060-94A7A6E20D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9598A5-40C7-738A-1060-94A7A6E20D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9598A5-40C7-738A-1060-94A7A6E20D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9598A5-40C7-738A-1060-94A7A6E20D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

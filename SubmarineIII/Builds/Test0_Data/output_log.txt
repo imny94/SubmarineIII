@@ -1,0 +1,51 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 850M (ID=0x1391)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   10.18.15.4248
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.354 seconds
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Backup\SUTD\ISTD\Software Construction\Project\R.Y.A.N\Submarine 2\SubmarineIII\Builds\Test0_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.865828 ms
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.858725 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 902.
+Total: 8.038672 ms (FindLiveObjects: 0.237849 ms CreateObjectMapping: 0.179837 ms MarkObjects: 7.567437 ms  DeleteObjects: 0.022758 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 531c -> priority: 1 
+  Thread -> id: 3f68 -> priority: 1 
