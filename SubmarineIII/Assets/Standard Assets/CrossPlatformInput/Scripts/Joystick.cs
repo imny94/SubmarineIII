@@ -6,6 +6,7 @@ namespace UnityStandardAssets.CrossPlatformInput
 {
 	public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 	{
+		public string Name;
 		public enum AxisOption
 		{
 			// Options for which axes to use

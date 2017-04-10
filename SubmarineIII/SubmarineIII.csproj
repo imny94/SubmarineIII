@@ -96,9 +96,11 @@
     <Compile Include="Assets\Lobby\Scripts\Lobby\LobbyTopPanel.cs" />
     <Compile Include="Assets\Scripts\BlobSpawn.cs" />
     <Compile Include="Assets\Scripts\BulletController.cs" />
+    <Compile Include="Assets\Scripts\DisplayText.cs" />
     <Compile Include="Assets\Scripts\EnemyBlobHealth.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\FiringCommand.cs" />
+    <Compile Include="Assets\Scripts\FiringJoystickCommand.cs" />
     <Compile Include="Assets\Scripts\SubmarineHealth.cs" />
     <Compile Include="Assets\Scripts\SubmarinePlayer.cs" />
   </ItemGroup>

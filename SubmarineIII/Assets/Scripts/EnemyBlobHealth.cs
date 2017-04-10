@@ -49,7 +49,7 @@ public class EnemyBlobHealth : NetworkBehaviour {
         }
 
     }
-	private void SetHealthBar(float myHealth){
+	public void SetHealthBar(float myHealth){
 
         Debug.Log("Blob is hit! health of blob is : "+myHealth);
 		healthBar.sizeDelta = new Vector2 (myHealth/maxHealth*5, healthBar.sizeDelta.y);

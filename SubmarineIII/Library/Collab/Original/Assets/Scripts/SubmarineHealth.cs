@@ -12,7 +12,7 @@ public class SubmarineHealth : NetworkBehaviour {
 	Rigidbody2D myBody;
     Text endGameText;
     public RectTransform healthBar;
-    public Slider healthSlider;          // Reference to the UI's health bar.
+    //public Slider healthSlider;          // Reference to the UI's health bar.
 
 
     // Use this for initialization
@@ -45,15 +45,16 @@ public class SubmarineHealth : NetworkBehaviour {
 	public void DecreaseHealth(){
         // Damage can only be calculated by the server, preventing hacked client from cheating
         // Also, if player is dead, no need to run this code anymore
+        //Debug.Log("Decrease Health Method is called! current health is : "+currentHealth);
         if (!isServer||currentHealth <= 0)
         {
             return;
         }
-        Debug.Log("DecreaseHealth() Method called!");
+        //Debug.Log("DecreaseHealth() Method called and is server!");
 		currentHealth -= 10f; // Should have no need to make explicit call to set player health as the current health variable is already hooked to setHealthBar method
 		//float calculatedHealth = currentHealth / maxHealth;
         //SetHealthBar (calculatedHealth);
-        healthSlider.value = currentHealth / maxHealth * 100; // Need to normalise health to between 0-100
+        //healthSlider.value = currentHealth / maxHealth * 100; // Need to normalise health to between 0-100
 
         if(currentHealth <= 0f)
         {
@@ -88,9 +89,9 @@ public class SubmarineHealth : NetworkBehaviour {
 
 	private void SetHealthBar(float myHealth){
 
-        Debug.Log(gameObject.name + " current health : " + myHealth);
+        //Debug.Log(gameObject.name + " current health : " + myHealth);
         //healthBar.transform.localScale = new Vector3 (myHealth, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
-        healthBar.sizeDelta = new Vector2(myHealth, healthBar.sizeDelta.y);
+        healthBar.sizeDelta = new Vector2(myHealth/maxHealth*5, healthBar.sizeDelta.y); // Need to normalise size of health bar to the width of the health bar in game
 
 	}
     /*

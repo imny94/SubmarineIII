@@ -74,10 +74,11 @@ GameObject:
   - component: {fileID: 212196098709004804}
   - component: {fileID: 50650488599208446}
   - component: {fileID: 114382511757253434}
-  - component: {fileID: 58051702624293284}
   - component: {fileID: 114840852947884840}
   - component: {fileID: 114993823532910526}
   - component: {fileID: 114943262293645222}
+  - component: {fileID: 58042055754099668}
+  - component: {fileID: 58176738284000638}
   m_Layer: 8
   m_Name: Blob
   m_TagString: Blob
@@ -136,7 +137,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58051702624293284
+--- !u!58 &58042055754099668
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547674140051040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 2.56}
+  serializedVersion: 2
+  m_Radius: 5.29
+--- !u!58 &58176738284000638
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -149,7 +164,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 2.56}
   serializedVersion: 2
-  m_Radius: 2.48
+  m_Radius: 2.56
 --- !u!114 &114015023353503024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,7 +254,8 @@ MonoBehaviour:
   enemyMask:
     serializedVersion: 2
     m_Bits: 4294967039
-  speed: 1
+  attack_speed: 0.5
+  evade_speed: 0.5
 --- !u!114 &114543610837650082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,7 +363,7 @@ MonoBehaviour:
     i13: 186
     i14: 248
     i15: 195
-  m_ServerOnly: 1
+  m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
 --- !u!212 &212196098709004804
 SpriteRenderer:
